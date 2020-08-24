@@ -1,0 +1,21 @@
+{
+    "name": "gcalendar/holiday",
+    "description": "Get holiday in google calendar.",
+    "keywords": ["google calendar", "gcalendar", "gcal"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andi Fauzi Akbar",
+            "email": "faujiakbar@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "google/apiclient": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "gcalendar\\": "src/"
+        }
+    }
+}
