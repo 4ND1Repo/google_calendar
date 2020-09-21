@@ -11,11 +11,12 @@
     ],
     "require": {
         "php": "^7.0 || ^8.0",
-        "google/apiclient": "^2.0"
+        "google/apiclient": "^2.0",
+        "vlucas/phpdotenv": ">=3.6"
     },
     "autoload": {
         "psr-4": {
-            "gcalendar\\": "src/"
+            "Gcalendar\\": "src/"
         }
     }
 }
