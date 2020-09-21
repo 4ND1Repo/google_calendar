@@ -88,6 +88,10 @@ class Account {
               mkdir(dirname($tokenPath), 0700, true);
           }
           file_put_contents($tokenPath, json_encode($client->getAccessToken()));
+          if(isset($r['code'])){
+            $uri_parts = explode('?', $_SERVER['REQUEST_URI'], 2);
+            header("Location: ".(!empty($_SERVER['HTTPS'])?"https":"http")."://".$_SERVER['HTTP_HOST'].$uri_parts[0]);
+          }
       }
       if($client)
         $this->client = $client;
